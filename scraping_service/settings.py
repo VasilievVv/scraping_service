@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'scraping.apps.ScrapingConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -31,6 +32,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'scraping_service.urls'
+
+AUTH_USER_MODEL = 'users.MyUser'
 
 TEMPLATES = [
     {
